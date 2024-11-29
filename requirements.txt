@@ -1,0 +1,5 @@
+numpy==2.1.3
+pandas==2.2.3
+yfinance==0.2.50
+scikit-learn==1.5.2
+torch==2.5.1

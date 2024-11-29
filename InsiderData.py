@@ -125,7 +125,7 @@ def combine_and_save_results(base_dir: str, directories: list, company_code: str
     final_df_all = final_df_all.sort_values(by='filing_date', ascending=True)
     
     # Save the final DataFrame to CSV
-    final_df_all.to_csv("final_merged_data.csv", index=False)
+    final_df_all.to_csv(f"{company_code}_insider_data.csv", index=False)
 
 
 if __name__ == "__main__":

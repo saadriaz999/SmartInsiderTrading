@@ -1,1 +1,10 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/eG6ocWkI)
+# Stock Prediction using Insider Data
+
+Preprocessing Steps:
+- Install python libraries in requirements.txt
+- Install the zip file for insider data using the following google cloud link: https://drive.google.com/drive/folders/1okCb9e4Qs5J2uS0zfa8W6D4h2VtLoy4P?usp=sharing 
+- Place this zip file in the data folder and unzip it
+
+The project currently has two python files which can be used to generate data for a specific company:
+- InsiderData.py: In this file, change the company code to the desired company and run
+- StockData.py: In this file, change the ticker to the desired company and run
