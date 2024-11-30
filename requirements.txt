@@ -3,3 +3,6 @@ pandas==2.2.3
 yfinance==0.2.50
 scikit-learn==1.5.2
 torch==2.5.1
+matplotlib==3.9.2
+keras==3.7.0
+tensorflow==2.18.0

@@ -130,7 +130,7 @@ def combine_and_save_results(base_dir: str, directories: list, company_code: str
 
 if __name__ == "__main__":
     # Define the company code you want to filter by (optional)
-    company_code = "CSCO"
+    company_code = "TGT"
     
     # Call the function to process and save results
     combine_and_save_results(
