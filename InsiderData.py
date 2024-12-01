@@ -130,11 +130,12 @@ def combine_and_save_results(base_dir: str, directories: list, company_code: str
 
 if __name__ == "__main__":
     # Define the company code you want to filter by (optional)
-    company_code = "TGT"
+    company_codes = ["JPM", "CVS", "V"]
     
     # Call the function to process and save results
-    combine_and_save_results(
-        base_dir=Constants.BASE_DIR,
-        directories=Constants.QUARTER_DIRECTORIES,
-        company_code=company_code
+    for code in company_codes:
+        combine_and_save_results(
+            base_dir=Constants.BASE_DIR,
+            directories=Constants.QUARTER_DIRECTORIES,
+            company_code=code
     )
