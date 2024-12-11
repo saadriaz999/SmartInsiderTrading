@@ -98,13 +98,13 @@ def process_company_data(filtered_df: pd.DataFrame, company_code: str = None) ->
     return filtered_df
 
 
-def combine_and_save_results(base_dir: str, directories: list, company_code: str = None) -> None:
+def combine_and_save_results(base_dir: os.path, directories: list, path: str, company_code: str = None) -> None:
     """
     Combine data from all directories, process company data (if company_code is provided),
     and save the final results to a CSV file.
     
     Args:
-        base_dir (str): The base directory path where the data is stored.
+        base_dir (os.Path): The base directory path where the data is stored.
         directories (list): List of directories (e.g., ["2006q1_form345", "2006q2_form345", ...]).
         company_code (str, optional): Company ticker code to filter by. Defaults to None.
     """
@@ -125,7 +125,7 @@ def combine_and_save_results(base_dir: str, directories: list, company_code: str
     final_df_all = final_df_all.sort_values(by='filing_date', ascending=True)
     
     # Save the final DataFrame to CSV
-    final_df_all.to_csv(f"{company_code}_insider_data.csv", index=False)
+    final_df_all.to_csv(os.path.join(path, "insider_data.csv"), index=False)
 
 
 if __name__ == "__main__":
