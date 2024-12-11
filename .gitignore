@@ -2,7 +2,6 @@
 /.idea/
 /__pycache__/
 /data/insider_data/
-/data/companies/
 
 /test.py
 /test.ipynb
